@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<center>
+<html>
+          <head>
+                    <title>
+                              OLYMPIC SYMBOL 
+                    </title>
+          </head>
+          <body class="body_backgorund" >
+                    <h1 id="titl" >
+                              OLYMPIC SYMBOL
+                    </h1>
+                    <canvas id="my_canvas" height="600" width="800" >
+
+                    </canvas>
+          </body>
+          <style>
+             #titl {
+                       font: 3em sans-serif;
+                       color: red;
+             }
+             .body_backgorund {
+	background-image: url("bg1.jpg");
+	background-position: center;
+	background-size: cover;
+	}
+
+#my_canvas{
+border-width: 10px;
+background-color: white;
+border-style: ridge;
+}
+          </style>
+          <script>
+             canvas = document.getElementById("my_canvas");
+             ctx = canvas.getContext("2d");
+
+             color = "red" ;
+
+            ctx.beginPath();
+            ctx.strokeStyle="blue";
+            ctx.lineWidth=5;
+            ctx.arc(300, 210, 40, 0, 2*Math.PI);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle="black";
+            ctx.lineWidth=5;
+            ctx.arc(390, 210, 40, 0, 2*Math.PI);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle="red";
+            ctx.lineWidth=5;
+            ctx.arc(490, 210, 40, 0, 2*Math.PI);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle="yellow";
+            ctx.lineWidth=5;
+            ctx.arc(345, 250, 40, 0, 2*Math.PI);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle="green";
+            ctx.lineWidth=5;
+            ctx.arc(440, 250, 40, 0, 2*Math.PI);
+            ctx.stroke();
+          </script>
+</html>
+</center>
